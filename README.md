@@ -27,6 +27,22 @@ Some workflows were originally saved as `.txt` files or copied from online sourc
 
 If you’re looking to run the conversion yourself, check out `convert_txt_to_json.py` included in this repo.
 
+## 🗂 Renaming Workflows
+
+A helper script `rename_workflows.py` is provided to standardize file names.
+It reads the `name` field from each workflow JSON and renames the file to a
+sanitized version of that value (or falls back to the first node name when the
+workflow has no title).
+
+Run the script with:
+
+```bash
+python rename_workflows.py
+```
+
+After running the script, review and commit the renamed files so the repository
+stays consistent.
+
 ---
 
 ## 🛠 Usage Instructions
